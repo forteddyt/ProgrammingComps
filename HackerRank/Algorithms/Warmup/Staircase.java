@@ -7,6 +7,7 @@ import java.util.Scanner;
  * 
  * @author Teddy
  */
+
 public class Staircase
 {
 
@@ -24,16 +25,23 @@ public class Staircase
     {
         int count = scan.nextInt();
         StringBuilder stairs = new StringBuilder();
-        String spaces = "";
+        StringBuilder spaces = new StringBuilder();
+
+        for (int i = 0; i < count; i++)
+        {
+            spaces.append(" ");
+        }
 
         stairs.append("#");
 
         for (int i = 1; i <= count; i++)
         {
-            spaces = String.format("%" + ((count != i)
-                ? (Integer)(count - i)
-                : "") + "s", "");
-            System.out.println(spaces + stairs);
+            spaces.deleteCharAt(spaces.length() - 1);
+            StringBuilder b = new StringBuilder();
+            b.append(spaces);
+            b.append(stairs);
+
+            System.out.println(b);
             stairs.append("#");
         }
     }
