@@ -3,11 +3,10 @@ package Warmup;
 import java.util.Scanner;
 
 /**
- * 
- * Diagonal Difference - https://www.hackerrank.com/challenges/diagonal-difference?h_r=next-challenge&h_v=zen
+ * Diagonal Difference -
+ * https://www.hackerrank.com/challenges/diagonal-difference
  * 
  * @author Teddy
- *
  */
 public class Diagonal_Difference
 {

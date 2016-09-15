@@ -3,8 +3,7 @@ package Warmup;
 import java.util.Scanner;
 
 /**
- * Plus Minus -
- * https://www.hackerrank.com/challenges/plus-minus?h_r=next-challenge&h_v=zen
+ * Plus Minus - https://www.hackerrank.com/challenges/plus-minus
  * 
  * @author Teddy
  */

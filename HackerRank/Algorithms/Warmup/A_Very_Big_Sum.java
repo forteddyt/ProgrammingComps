@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * 
- * A Very Big Sum - https://www.hackerrank.com/challenges/a-very-big-sum?h_r=next-challenge&h_v=zen
+ * A Very Big Sum - https://www.hackerrank.com/challenges/a-very-big-sum
  * 
  * @author Teddy
  *
