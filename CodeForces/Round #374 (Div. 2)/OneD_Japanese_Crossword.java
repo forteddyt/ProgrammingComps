@@ -24,7 +24,6 @@ public class OneD_Japanese_Crossword
 
     public void start()
     {
-        int n = scan.nextInt();
         scan.nextLine();
 
         char[] input = scan.nextLine().toCharArray();

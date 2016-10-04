@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -51,7 +50,6 @@ public class Text_Document_Analysis
 
         m1 = noParen.matcher(s);
         int longest = 0;
-        ArrayList<String> myWords = new ArrayList<String>();
 
         while (m1.find())
         {
