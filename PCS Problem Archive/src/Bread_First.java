@@ -5,9 +5,8 @@ import java.util.Queue;
 import java.util.Scanner;
 
 /**
- * Bread First - https://pcs.spruett.me/problems/2
- * 
- * Woo!!! First successful graph implementation completed!!!!!
+ * Bread First - https://pcs.spruett.me/problems/2 Woo!!! First successful graph
+ * implementation completed!!!!!
  * 
  * @author Teddy Todorov
  * @version Oct 5, 2016
