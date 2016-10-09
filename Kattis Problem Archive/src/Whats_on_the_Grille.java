@@ -5,21 +5,18 @@ import java.util.Scanner;
  * 
  * @author Teddy Todorov
  */
-public class Whats_on_the_Grille
-{
+public class Whats_on_the_Grille {
 
     Scanner scan = new Scanner(System.in);
 
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Whats_on_the_Grille g = new Whats_on_the_Grille();
         g.start();
     }
 
 
-    public void start()
-    {
+    public void start() {
 
     }
 
