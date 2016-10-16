@@ -40,7 +40,7 @@ public class Broken_Clock {
 
                 hours = c[0] + "" + c[1];
             }
-            else if (Integer.parseInt(hours) == 0) {
+            if (Integer.parseInt(hours) == 0) {
                 c[1] = '1';
 
                 hours = c[0] + "" + c[1];
