@@ -34,7 +34,32 @@ public class Coupons_and_Discounts {
             schedule[i] = scan.nextInt();
         }
 
-        int[] ret = orderPizzas(schedule, 0);
+        int[] ret = schedule;
+        int curDay = 0;
+        while (curDay < ret.length) {
+            if (ret[curDay] <= 0) {
+                curDay++;
+            }
+            else {
+                if (ret[curDay] > 1) {
+                    if (ret[curDay] % 2 == 1) {
+                        ret[curDay] = 1;
+                    }
+                    else {
+                        ret[curDay] = 0;
+                    }
+                }
+                else {
+                    if (curDay + 1 >= ret.length) {
+                        ret[curDay] = -1;
+                    }
+                    else {
+                        ret[curDay] = ret[curDay] - 1;
+                        ret[curDay + 1] = ret[curDay + 1] - 1;
+                    }
+                }
+            }
+        }
 
         for (int i : ret) {
             if (i < 0) {
