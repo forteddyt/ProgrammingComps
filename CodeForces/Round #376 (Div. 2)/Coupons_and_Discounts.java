@@ -3,6 +3,8 @@ import java.util.Scanner;
 /**
  * Coupons and Discounts - http://codeforces.com/contest/731/problem/B
  * 
+ * Pre-tests passed
+ * 
  * @author Teddy
  * @version Oct 16, 2016
  */
