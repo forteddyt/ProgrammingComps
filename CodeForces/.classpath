@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con"
-		path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8" />
-	<classpathentry kind="src" path="Round #369 Div 2" />
-	<classpathentry kind="src" path="Round #370 (Div. 2)" />
-	<classpathentry kind="src" path="Gym" />
-	<classpathentry kind="src" path="Round #374 (Div. 2)" />
-	<classpathentry kind="src" path="Round #375 (Div. 2)" />
-	<classpathentry kind="output" path="bin" />
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="Round #369 Div 2"/>
+	<classpathentry kind="src" path="Round #370 (Div. 2)"/>
+	<classpathentry kind="src" path="Gym"/>
+	<classpathentry kind="src" path="Round #374 (Div. 2)"/>
+	<classpathentry kind="src" path="Round #375 (Div. 2)"/>
+	<classpathentry kind="src" path="Round #376 (Div. 2)"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
