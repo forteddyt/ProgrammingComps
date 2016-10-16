@@ -26,15 +26,28 @@ public class Broken_Clock {
         String hours = time.substring(0, 2);
         String minutes = time.substring(3, 5);
 
-        if (Integer.parseInt(hours) > n) {
-            char[] s = (hours + "").toCharArray();
-            s[0] = '0';
-            System.out.print(s[0] + "" + s[1]);
+        char[] c = hours.toCharArray();
+        if (n == 24) {
+            if (Integer.parseInt(hours) >= n) {
+                c[0] = '0';
+
+                hours = c[0] + "" + c[1];
+            }
         }
         else {
-            System.out.print(hours);
+            if (Integer.parseInt(hours) > n) {
+                c[0] = '0';
+
+                hours = c[0] + "" + c[1];
+            }
+            else if (Integer.parseInt(hours) == 0) {
+                c[1] = '1';
+
+                hours = c[0] + "" + c[1];
+            }
         }
 
+        System.out.print(hours);
         System.out.print(":");
 
         if (Integer.parseInt(minutes) > 60) {
