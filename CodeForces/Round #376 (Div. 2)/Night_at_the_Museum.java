@@ -3,6 +3,8 @@ import java.util.Scanner;
 /**
  * Night at the Museum - http://codeforces.com/contest/731/problem/0
  * 
+ * Pre-tests passed
+ * 
  * @author Teddy
  * @version Oct 16, 2016
  */
