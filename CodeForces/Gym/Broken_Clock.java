@@ -36,11 +36,16 @@ public class Broken_Clock {
         }
         else {
             if (Integer.parseInt(hours) > n) {
-                c[0] = '0';
+                if (c[1] != '0') {
+                    c[0] = '0';
+                }
+                else {
+                    c[0] = '1';
+                }
 
                 hours = c[0] + "" + c[1];
             }
-            if (Integer.parseInt(hours) == 0) {
+            else if (Integer.parseInt(hours) == 0) {
                 c[1] = '1';
 
                 hours = c[0] + "" + c[1];
