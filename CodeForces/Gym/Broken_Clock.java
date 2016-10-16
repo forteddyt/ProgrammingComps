@@ -50,7 +50,7 @@ public class Broken_Clock {
         System.out.print(hours);
         System.out.print(":");
 
-        if (Integer.parseInt(minutes) > 60) {
+        if (Integer.parseInt(minutes) >= 60) {
             char[] s = (minutes + "").toCharArray();
             s[0] = '0';
             System.out.print(s[0] + "" + s[1]);
