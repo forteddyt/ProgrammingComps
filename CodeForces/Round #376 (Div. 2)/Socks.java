@@ -21,16 +21,26 @@ public class Socks {
 
 
     public void start() {
-        int n = scan.nextInt();
-        int m = scan.nextInt();
-        int k = scan.nextInt();
+        int n = scan.nextInt(); // number of socks
+        int m = scan.nextInt(); // number of days
+        int k = scan.nextInt(); // number of colors
 
-        ArrayList<ArrayList<Integer>> graph =
+        ArrayList<ArrayList<Integer>> piles =
             new ArrayList<ArrayList<Integer>>();
-        int[] colorOptions = new int[n];
+
         for (int i = 0; i < n; i++) {
-            colorOptions[i] = scan.nextInt();
+            scan.nextInt();
+            piles.add(new ArrayList<Integer>());
         }
 
+        for (int i = 0; i < m; i++) {
+            int l = scan.nextInt();
+            int r = scan.nextInt();
+
+            piles.get(l - 1).add(r - 1);
+            piles.get(r - 1).add(l - 1);
+        }
+
+        System.out.println(piles);
     }
 }
