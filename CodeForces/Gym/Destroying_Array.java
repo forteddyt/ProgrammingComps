@@ -32,15 +32,15 @@ public class Destroying_Array {
             long max = 0;
             long temp = 0;
 
-            for (Long l : arr) {
-                if (l == null) {
-                    temp = 0;
-                }
-                else {
+            for (int q = 0; q < arr.length; q++) {
+                Long l = arr[q];
+                if (l != null) {
                     temp += l;
                 }
-
-                max = Math.max(max, temp);
+                if (l == null || q == arr.length - 1) {
+                    max = Math.max(max, temp);
+                    temp = 0;
+                }
             }
 
             System.out.println(max);
