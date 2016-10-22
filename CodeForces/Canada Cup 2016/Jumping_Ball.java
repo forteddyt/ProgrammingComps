@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import javax.xml.stream.events.Characters;
 
 /**
  * Jumping Ball - http://codeforces.com/contest/725/problem/0
@@ -21,33 +22,19 @@ public class Jumping_Ball {
 
     public void start() {
         int n = scan.nextInt();
-
-        scan.nextLine();
-        String s = scan.nextLine();
-
         int counter = 0;
 
+        scan.nextLine();
+        char[] c = scan.nextLine().toCharArray();
+
+        Character lastDifferent = ' ';
         for (int i = 0; i < n; i++) {
-            int position = i;
-            ArrayList<String> moves = new ArrayList<String>();
-            int mOC = -1;
-            while (mOC < 2 || moves.get(mOC).equals(moves.get(mOC - 1))) {
-                String move = s.substring(position, position + 1);
-                moves.add(move);
-                mOC++;
-                if (move.equals("<")) {
-                    position--;
-                }
-                else if (move.equals(">")) {
-                    position++;
-                }
-                if (position < 0 || position >= n) {
-                    counter++;
-                    break;
-                }
+            if (lastDifferent != c[i]) {
+                lastDifferent = c[i];
+            }
+            else {
+                counter++;
             }
         }
-
-        System.out.println(counter);
     }
 }
